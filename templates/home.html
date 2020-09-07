@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hello and welcome to my funky site</h1>
+    <p>
+        {{ my_text }}
+    </p>
+    <p>
+        To find more call {{ my_number }}
+    </p>
+
+    <ul>
+        {% for item in my_list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{%endblock%}
+
+{% block second %}
+<h1> Second block- HELLO!!! </h1>
+{% endblock %}
